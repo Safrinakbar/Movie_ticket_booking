@@ -1,0 +1,97 @@
+
+.ticket-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute; /* Position it at the top of the page */
+  top: 20px; /* 20px from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal position */
+  z-index: 10; /* Make sure it's on top of the ticket */
+}
+
+.btn-download,
+.btn-email {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover,
+.btn-email:hover {
+  background-color: #0056b3;
+}
+
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.ticket {
+  display: flex; /* Flex layout to place image and details side by side */
+  width: 800px;
+  background: #ffffff; /* White background for the ticket */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ticket-image {
+  flex: 1; /* Let the image take up half the space */
+  background-color: #000; /* Fallback background color */
+}
+
+.ticket-image img {
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Make the image responsive */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
+
+.ticket-details {
+  flex: 2; /* Let the details take up the remaining space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-introduction {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark color for text */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ticket-info {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ticket-info p {
+  margin: 8px 0;
+}
+
+.ticket-info strong {
+  color: #555; /* Slightly darker color for emphasis */
+}
+
+.barcode {
+  margin-top: auto; /* Push barcode to the bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,18 @@
+
+.custom-carousel {
+    width: 65%; 
+    margin: 0 auto;
+  }
+  
+ 
+  .custom-carousel-image {
+    height: 300px; 
+    object-fit: cover; 
+  }
+  
+ 
+  .custom-carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+  }
+  
